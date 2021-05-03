@@ -1,7 +1,14 @@
+:root {
+  --main-color: #254E58;
+  --sec-color: #88BDBC;
+  --third-color: #112D32;
+  --fourth-color: #4F4A41;
+  /* --fifth-color: #6E6658; */
+  --fifth-color: #212121;
+}
 
 body {
-  background-image: url("../Images/HolzWallpaper3.jpg");
-  background-size: contain;
+  background-color: var(--main-color);
 }
 
 .contact_section {
@@ -12,6 +19,7 @@ body {
   position: relative;
   box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
   padding: 3%;
+  z-index: -1;
 }
 
 .contact_section #title {
@@ -76,6 +84,19 @@ body {
 }
 
 /* Navigation style */
+
+.navigation_section {
+  opacity: 0.3;
+}
+
+.navbar {
+  background-color: var(--fifth-color);
+}
+
+.navigation_section:hover {
+  opacity: 1.0;
+
+}
 
 .navbar-dark .navbar-nav {
   width:80%

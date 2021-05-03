@@ -1,0 +1,145 @@
+/* General styles, e.g. body, h1, p, ... */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #254E58;
+  --sec-color: #88BDBC;
+  --third-color: #112D32;
+  --fourth-color: #4F4A41;
+  --fifth-color: #6E6658;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+/* Custom styles */
+
+/* Typography */
+
+#title {
+  margin-bottom: 6%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 4em;
+  color: var(--sec-color);
+}
+
+/* Navigation styles */
+
+.navigation_section {
+  opacity: 0.3;
+}
+
+.navbar {
+  background-color: var(--fifth-color);
+}
+
+.navigation_section:hover {
+  opacity: 1.0;
+}
+
+.navbar-dark .navbar-nav {
+  width:80%
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 992px) {
+  #collapsibleNavbar {
+    margin-left: -3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #collapsibleNavbar {
+    margin-left: 3%;
+  }
+}
+
+/* Footer styles */
+
+#foot {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  position: relative;
+  background-color: var(--fourth-color);
+  height: 150px;
+}
+
+
+#footer_item {
+  font-size: 25px;
+  color: white;
+}
+
+/* Content styles */
+
+.content {
+  min-height: calc(100% - 250px);
+  /* background-image: url("../Images/HolzWallpaper3.jpg");
+  background-size: cover; */
+  background-color: var(--main-color);
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+/* Image mosaic */
+
+.img-fluid {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  transition: all .2s ease-in-out;
+}
+
+/* .img-fluid:hover {
+  transform: scale(1.4);
+} */
+
+
+
+/* Image gallery */
+
+#galleryParent {
+
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+  transition-duration: 0.5s;
+}
+
+.img_box {
+  height: 80vh;
+  width: 60vw;
+  -webkit-box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.3);
+}
+
+#gallery {
+  height: 110vh;
+  width:70vw;
+  margin: auto;
+}
+
+#poem {
+  max-width:100%;
+  max-height:100%;
+}

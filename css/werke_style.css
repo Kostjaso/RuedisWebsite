@@ -1,0 +1,98 @@
+/* General styles, e.g. body, h1, p, ... */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #254E58;
+  --sec-color: #88BDBC;
+  --third-color: #112D32;
+  --fourth-color: #4F4A41;
+  --fifth-color: #6E6658;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+/* Custom styles */
+
+/* Navigation styles */
+
+.navigation_section {
+  opacity: 0.3;
+}
+
+.navbar {
+  background-color: var(--fifth-color);
+}
+
+.navigation_section:hover {
+  opacity: 1.0;
+}
+
+.navbar-dark .navbar-nav {
+  width:80%
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 992px) {
+  #collapsibleNavbar {
+    margin-left: -3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #collapsibleNavbar {
+    margin-left: 3%;
+  }
+}
+
+/* Footer styles */
+
+#foot {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  position: relative;
+  background-color: var(--fourth-color);
+  height: 150px;
+}
+
+
+#footer_item {
+  font-size: 25px;
+  color: white;
+}
+
+/* Content styles */
+
+.content {
+  min-height: calc(100% - 250px);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+#bookTitle {
+  color: var(--sec-color);
+  margin-bottom: 5%;
+}
+
+
+/* Sidebar */
+
+#sidebarItem {
+  font-size: 21px;
+  color: var(--sec-color);
+  text-decoration: none !important;
+  margin-bottom: 6%;
+}
